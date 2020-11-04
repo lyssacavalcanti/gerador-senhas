@@ -5,5 +5,12 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: rgb(3, 20, 31);
+    color: white;
     margin: 0;
+}
+
+.pw-container {
+    background-color: #20649c;
+    width: 400px;
 }

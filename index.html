@@ -11,25 +11,31 @@
     <div class="pw-container">
         <div class="pw-header">
             <div class="pw"></div>
+            <button>Copiar</button>
         </div>
         <div class="pw-body">
             <div class="form-control">
-                <label for="upper"></label>
+                <label for="len">Quantidade de caracteres</label>
+                <input id="len"
+                type="number" min="4" max="40"/>
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="upper">Contém letras maíusculas</label>
                 <input id="upper"
                 type="checkbox"/>
             </div>
                 <div class="form-control">
-                    <label for="lower"></label>
+                    <label for="lower">Contém letras minúsculas</label>
                     <input id="lower"
                     type="checkbox"/>
                 </div>
             <div class="form-control">
-                <label for="number"></label>
+                <label for="number">Contém números</label>
                 <input id="number"
                 type="checkbox"/>
             </div>
                 <div class="form-control">
-                    <label for="symbol"></label>
+                    <label for="symbol">Contém caracteres especiais</label>
                     <input id="symbol"
                     type="checkbox"/>
                 </div>
