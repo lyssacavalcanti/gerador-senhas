@@ -16,7 +16,7 @@ body {
 
 .pw-container {
     background-color: #20649c;
-    width: 400px;
+    width: 300px;
 }
 
 .pw-header {
@@ -24,9 +24,22 @@ body {
 }
 
 .pw {
-    height: 50px;
+    background-color: rgb(3,20,31);
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    height: 70px;
     width: 100%;
+    position: relative;
 }
+
+.pw button {
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .pw-body {
     padding: 1rem;
 }
