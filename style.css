@@ -15,7 +15,7 @@ body {
 }
 
 .pw-container {
-    background-color: #20649c;
+    background-color: #5f1b32;
     width: 400px;
 }
 
@@ -35,14 +35,22 @@ body {
 }
 
 .pw button {
-    background-color: rgb(3,20,31);
+    background-color: rgb(16, 142, 201);
     color: white;
     border: none;
-    padding: 0 .25rem 0.5rem;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0.25rem 0.5rem;
     position:absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%, 50%);
+    transform: translate(-50%, 50%);
+    transition: 0;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
 }
 
 .pw-body {
