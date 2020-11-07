@@ -17,7 +17,7 @@ body {
 .pw-container {
     background-color: #5f1b32;
     box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
-    max-width: 400px;
+    min-width: 400px;
 }
 
 .pw-header {

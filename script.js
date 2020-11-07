@@ -35,7 +35,23 @@ function getSymbol() {
 
      let password = "";
 
-     for(let i=0; i<len; i++) {
+     if (upperEl.checked) {
+        password += getUppercase();
+    }
+
+    if (lowerEl.checked) {
+        password += getLowercase();
+    }
+
+    if (numberEl.checked) {
+        password += getNumber();
+    }
+
+    if (symbolEl.checked) {
+        password += getSymbol();
+    }
+
+     for(let i = password.length; i<len; i++) {
         const x = generateX(); 
         password += x;
      }
@@ -61,6 +77,8 @@ function generateX() {
     if (symbolEl.checked) {
         xs.push(getSymbol());
     }
+
+
     if (xs.length === 0) return "";
 
     return xs[Math.floor(Math.random() * xs.length)];
