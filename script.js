@@ -61,8 +61,23 @@ function generateX() {
     if (symbolEl.checked) {
         xs.push(getSymbol());
     }
+    if (xs.length === 0) return "";
 
     return xs[Math.floor(Math.random() * xs.length)];
 }
 
  generateEl.addEventListener("click", generatePassword);
+
+ copyEl.addEventListener('click', () => {
+     const textarea = document.createElement ('textarea'); 
+     const password = pwEl.innerText;
+
+     if(!password) {return;}
+
+     textarea.value = password;
+     document.body.appendChild(textarea);
+     textarea.select();
+     document.execCommand('copy');
+     textarea.remove();
+     alert("Senha copiada para área de transferência")
+ })

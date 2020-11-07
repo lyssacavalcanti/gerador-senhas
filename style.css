@@ -17,7 +17,7 @@ body {
 .pw-container {
     background-color: #5f1b32;
     box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
-    width: 400px;
+    max-width: 400px;
 }
 
 .pw-header {
@@ -27,7 +27,7 @@ body {
 .pw {
     background-color: rgb(3,20,31);
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
     align-items: center;
     height: 70px;
     width: 100%;
